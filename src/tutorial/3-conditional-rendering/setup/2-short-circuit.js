@@ -15,7 +15,7 @@ const ShortCircuit = () => {
       <button className="btn" onClick={() => setIsError(!isError)}>
         toggle error
       </button>
-      {isError && <h1>error is true</h1>}
+      {isError ? <h1>Error is true</h1> : <h1>Error is false</h1>}
     </>
   );
 };
